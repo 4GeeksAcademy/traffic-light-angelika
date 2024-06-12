@@ -7,10 +7,10 @@ const ContainerSemaforo = () => {
 
     return (
         <>
-        <div className="card bg-dark containerSemaforo d-flex flex-column align-items-center justify-content-evenly">
-            <Lights activeColor={activeColor} />
-        </div>
-        <BtnCambiarColor setActiveColor={setActiveColor} />
+            <div className="card bg-dark containerSemaforo d-flex flex-column align-items-center justify-content-evenly">
+                <Lights activeColor={activeColor} setActiveColor={setActiveColor} />
+            </div>
+            <BtnCambiarColor setActiveColor={setActiveColor} />
         </>
     );
 };

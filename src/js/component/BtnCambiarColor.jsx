@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
+import PropTypes from "prop-types";
 
 const BtnCambiarColor = ({ setActiveColor }) => {
     const txBtn = "Cambiar Color";
     const cambiarColor = () => {
-        setActiveColor(activeColor => {
-            if (activeColor === 2) return 0;
-            return activeColor + 1;
-        });
+        setActiveColor(activeColor => (activeColor === 2 ? 0 : activeColor + 1));
     };
 
     return (
@@ -14,6 +12,10 @@ const BtnCambiarColor = ({ setActiveColor }) => {
             {txBtn}
         </button>
     );
+};
+
+BtnCambiarColor.propTypes = {
+    setActiveColor: PropTypes.func.isRequired
 };
 
 export default BtnCambiarColor;
