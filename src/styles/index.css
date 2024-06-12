@@ -10,3 +10,38 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.containerSemaforo {
+    width: 200px;
+    height: 450px;
+    border-radius: 25px;
+}
+
+.light-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.shadow-danger {
+    box-shadow: 0 0 15px 5px red;
+}
+
+.shadow-warning {
+    box-shadow: 0 0 15px 5px yellow;
+}
+
+.shadow-success {
+    box-shadow: 0 0 15px 5px green;
+}
+
+.containerBtn {
+    width: 330px;
+}
+
+.btn {
+    width: 300px;
+}
